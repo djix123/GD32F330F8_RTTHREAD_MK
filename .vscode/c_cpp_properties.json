@@ -1,0 +1,31 @@
+{
+    "configurations": [
+        {
+            "name": "Mac",
+            "includePath": [
+                "${workspaceFolder}/Src",
+                "${workspaceFolder}/Inc",
+                "${workspaceFolder}/Drivers/GD32F3x0_standard_peripheral/Include",
+                "${workspaceFolder}/Drivers/CMSIS/GD/GD32F3x0/Include",
+                "${workspaceFolder}/Drivers/CMSIS",
+                "${workspaceFolder}/rt-thread/include",
+                "${workspaceFolder}/rt-thread/include/libc",
+                "${workspaceFolder}/rt-thread/libcpu//arm/common",
+                "${workspaceFolder}/rt-thread/libcpu//arm/cortex-m4",
+                "${workspaceFolder}/rt-thread"
+            ],
+            "defines": [
+                "GD32F3x0",
+                "GD32F330"
+            ],
+            "macFrameworkPath": [
+                "/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/System/Library/Frameworks"
+            ],
+            "compilerPath": "/Users/jgiles/tools/riscv32imac/bin/riscv32-unknown-elf-gcc",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "macos-gcc-arm64"
+        }
+    ],
+    "version": 4
+}

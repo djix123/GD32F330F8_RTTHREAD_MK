@@ -1,0 +1,35 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+//         {
+//             "type": "gdb",
+//             "request": "attach",
+//             "name": "Remote Debug Microcontroller",
+//             "target": "extended-remote :2331",
+//             "executable": "./build/STM32F042F6P6.elf",
+//             "gdbpath": "/usr/local/bin/arm-none-eabi-gdb",
+//             "cwd": "${workspaceRoot}",
+//             "remote": false,
+//             "valuesFormatting": "parseText",
+//             "autorun": [ ""]
+//  //           "autorun": [ "monitor swdp_scan", "attach 1" ]
+//         },
+
+        {
+            "cwd": "${workspaceRoot}",
+            "executable": "build/STM32F103CB_RTTHREAD.elf",
+            "name": "Debug Microcontroller",
+            "request": "launch",
+            "type": "cortex-debug",
+            //"servertype": "jlink",
+            "device" : "STM32F103CB",
+            "interface": "swd",
+            "svdFile": "/Users/jgiles/MCU/cmsis-svd/data/STMicro/STM32F103xx.svd",
+            "servertype": "bmp",
+            "BMPGDBSerialPort": "/dev/cu.usbmodem1101"
+        },
+     ]
+}
